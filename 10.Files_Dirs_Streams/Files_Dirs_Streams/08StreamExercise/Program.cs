@@ -109,6 +109,7 @@ static void FindText(string filePath)
                 numLine++;
                 Console.WriteLine($"Found on line {numLine}: {line}");
                 found = true;
+                break;
             }
         }
         if (!found)
