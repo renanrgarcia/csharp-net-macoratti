@@ -1,17 +1,10 @@
 ﻿namespace BinarySerialization;
 [Serializable]
-internal class Student
+internal class Student(int id, string name, int age)
 {
-    public int Id { get; set; }
-    public string Name { get; set; } = null!;
+    public int Id { get; set; } = id;
+    public string Name { get; set; } = name;
 
     [NonSerialized]
-    public int Age;
-
-    public Student(int id, string name, int age)
-    {
-        Id = id;
-        Name = name;
-        Age = age;
-    }
+    public int Age = age;
 }
