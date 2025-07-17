@@ -1,0 +1,29 @@
+﻿string directoryPath = @"C:/data/08exercise/example.txt";
+string targetDirectory = @"C:/data/09exercise";
+
+Console.WriteLine("Copy a file to a new directory:");
+
+if (File.Exists(directoryPath))
+{
+    if (!Directory.Exists(targetDirectory))
+    {
+        Directory.CreateDirectory(targetDirectory);
+        Console.WriteLine($"Directory {targetDirectory} created.");
+    }
+
+    string targetFilePath = Path.Combine(targetDirectory, "example.txt");
+
+    if (!File.Exists(targetFilePath))
+    {
+        File.Copy(directoryPath, targetFilePath);
+        Console.WriteLine($"File copied to {targetFilePath}.");
+    }
+    else
+    {
+        Console.WriteLine($"File {targetFilePath} already exists.");
+    }
+}
+else
+{
+    Console.WriteLine($"File {directoryPath} does not exist.");
+}
