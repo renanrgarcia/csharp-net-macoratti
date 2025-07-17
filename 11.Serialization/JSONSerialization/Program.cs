@@ -27,7 +27,7 @@ Student? deserializedStudent = JsonSerializer.Deserialize<Student>(fileStream2);
 if (deserializedStudent != null)
 {
     Console.WriteLine("Object deserialized from JSON successfully.");
-    Console.WriteLine($"Id: {deserializedStudent.Id}, Name: {deserializedStudent.Name}, Age: {deserializedStudent.Age}");
+    Console.WriteLine($"Id: {deserializedStudent.Id}, Name: {deserializedStudent.Name}");
 }
 else
 {

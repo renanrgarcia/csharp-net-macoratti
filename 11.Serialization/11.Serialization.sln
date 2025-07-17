@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLSerialization", "XMLSeri
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JSONSerialization", "JSONSerialization\JSONSerialization.csproj", "{19283A0C-E503-4A99-B343-CFD20CC42019}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio01", "Exercicio01\Exercicio01.csproj", "{36F5DEA1-3874-4EDC-BD25-E424BF1EE064}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{19283A0C-E503-4A99-B343-CFD20CC42019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19283A0C-E503-4A99-B343-CFD20CC42019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19283A0C-E503-4A99-B343-CFD20CC42019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36F5DEA1-3874-4EDC-BD25-E424BF1EE064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36F5DEA1-3874-4EDC-BD25-E424BF1EE064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36F5DEA1-3874-4EDC-BD25-E424BF1EE064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36F5DEA1-3874-4EDC-BD25-E424BF1EE064}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
