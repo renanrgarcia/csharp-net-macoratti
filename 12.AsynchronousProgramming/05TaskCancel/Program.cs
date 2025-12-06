@@ -36,25 +36,23 @@ namespace _05TaskCancel
 
         private static async Task ManualCancellation()
         {
-            using (var cancellationTokenSource = new CancellationTokenSource())
+            using var cancellationTokenSource = new CancellationTokenSource();
+            var keyboardTask = Task.Run(() =>
             {
-                var keyboardTask = Task.Run(() =>
-                {
-                    Console.WriteLine("Press any key to cancel the operation...");
-                    Console.ReadKey();
-                    cancellationTokenSource.Cancel();
-                });
-                try
-                {
-                    var result = await LongTermOperationCancellable(500, cancellationTokenSource.Token);
-                    Console.WriteLine($"Result: {result}");
-                }
-                catch (TaskCanceledException)
-                {
-                    throw;
-                }
-                await keyboardTask;
+                Console.WriteLine("Press any key to cancel the operation...");
+                Console.ReadKey();
+                cancellationTokenSource.Cancel();
+            });
+            try
+            {
+                var result = await LongTermOperationCancellable(500, cancellationTokenSource.Token);
+                Console.WriteLine($"Result: {result}");
             }
+            catch (TaskCanceledException)
+            {
+                throw;
+            }
+            await keyboardTask;
         }
 
         private static async Task TimeoutCancellation(int time)

@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36301.6
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11201.2 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01SyncProgramming", "SyncProgramming\01SyncProgramming.csproj", "{417BD3C4-AB13-4E23-B5E4-5BA710F5B906}"
 EndProject
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04ValueTaskT", "ValueTaskT\04ValueTaskT.csproj", "{4F1AD9B4-6761-48FB-B95D-117476A4EB84}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05TaskCancel", "05TaskCancel\05TaskCancel.csproj", "{7968A25C-F9B6-492C-8C82-A2094485499D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06AsyncProg_Exercise", "06AsyncProg_Exercise\06AsyncProg_Exercise.csproj", "{6A758C30-E8B3-48FC-943E-3242DE9D6436}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{7968A25C-F9B6-492C-8C82-A2094485499D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7968A25C-F9B6-492C-8C82-A2094485499D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7968A25C-F9B6-492C-8C82-A2094485499D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A758C30-E8B3-48FC-943E-3242DE9D6436}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A758C30-E8B3-48FC-943E-3242DE9D6436}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A758C30-E8B3-48FC-943E-3242DE9D6436}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A758C30-E8B3-48FC-943E-3242DE9D6436}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
